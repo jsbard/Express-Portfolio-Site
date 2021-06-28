@@ -9,7 +9,6 @@ app.get("/", (req, res) => {
    res.render("index", data.projects);
 });
 
-
 app.get("/about", (req, res) => {
    res.render("about");
 });
