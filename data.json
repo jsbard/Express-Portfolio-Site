@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 5,
+      "project_name": "Public API Employee Directory",
+      "description": "Utilize an external API to populate a webpage displaying a list of employees",
+      "technologies": ["JavaScript", "Fetch and Public APIs", "Asynchronous Programming"],
+      "live_link": "https://jsbard.github.io/Public-API-Employee-Directory",
+      "github_link": "https://github.com/jsbard/Public-API-Employee-Directory",
+      "image_urls": ["/static/images/project5/thumbnail.png", "/static/images/project5/scrnsht-1.png", "/static/images/project5/scrnsht-2.png", "/static/images/project5/scrnsht-3.png"]
+    },
+    {
+      "id": 4,
+      "project_name": "Game Show App",
+      "description": "A Wheel-Of-Fortune style browser-based game. Guess the phrase before you run out of lives!",
+      "technologies": ["JavaScript", "Object-Oriented Programming"],
+      "live_link": "https://jsbard.github.io/Game-Show-App/",
+      "github_link": "https://github.com/jsbard/Game-Show-App/",
+      "image_urls": ["/static/images/project4/thumbnail.png", "/static/images/project4/thumbnail.png", "/static/images/project4/scrnsht-1.png", "/static/images/project4/scrnsht-2.png"]
+    },
+    {
+      "id": 3,
+      "project_name": "Interactive Form",
+      "description": "Dynamically validate a signup form and provide error handling",
+      "technologies": ["JavaScript", "HTML5", "Accessible Design"],
+      "live_link": "https://jsbard.github.io/Interactive-Form/",
+      "github_link": "https://github.com/jsbard/Interactive-Form/",
+      "image_urls": ["/static/images/project3/thumbnail.png", "/static/images/project3/thumbnail.png", "/static/images/project3/scrnsht-1.png", "/static/images/project3/scrnsht-2.png"]
+    },
+    {
+      "id": 2,
+      "project_name": "Data Pagination & Content Filter",
+      "description": "Paginate a list of employees and apply search functionality",
+      "technologies": ["JavaScript"],
+      "live_link": "https://jsbard.github.io/Data-Pagination-And-Filtering/",
+      "github_link": "https://github.com/jsbard/Data-Pagination-And-Filtering/",
+      "image_urls": ["/static/images/project2/thumbnail.png", "/static/images/project2/scrnsht-1.png", "/static/images/project2/scrnsht-2.png", "/static/images/project2/scrnsht-3.png"]
+    },
+    {
+      "id": 1,
+      "project_name": "Random Quote Generator",
+      "description": "Generate a random inspirational quote and display on a web page",
+      "technologies": ["JavaScript"],
+      "live_link": "https://jsbard.github.io/Random-Quote-Generator",
+      "github_link": "https://github.com/jsbard/Random-Quote-Generator/",
+      "image_urls": ["/static/images/project1/thumbnail.png", "/static/images/project1/thumbnail.png", "/static/images/project1/scrnsht-1.png", "/static/images/project1/scrnsht-2.png"]
+    }
+  ]
+}
