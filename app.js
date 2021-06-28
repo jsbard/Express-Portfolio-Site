@@ -2,7 +2,7 @@ const express = require("express");
 const data = require("./data.json");
 const app = express();
 
-const port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 app.set("view engine", "pug");
 app.use('/static', express.static('public'));
@@ -32,6 +32,6 @@ app.use((err, req, res, next) => {
       res.send(`<h1>${err.status}</h1><h2>${err.message}</h2>`)
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
    console.log("Listening on port 3000.....");
 });
