@@ -3,7 +3,7 @@ const data = require("./data.json");
 const app = express();
 
 // Specify port for deployment to Heroku
-let port = process.env.PORT || 3000;
+// let port = process.env.PORT || 3000;
 
 app.set("view engine", "pug");
 app.use('/static', express.static('public'));
@@ -48,6 +48,6 @@ app.get("/page-not-found}", (req, res) => {
 });
 
 // For deployment to Heroku, use the variable "port" and uncomment the line at the top of this file
-app.listen(port, () => {
+app.listen(3000, () => {
    console.log("Listening on port 3000.....");
 });
