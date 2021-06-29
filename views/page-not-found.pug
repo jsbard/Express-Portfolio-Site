@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+
+    h1 Oops! The server responded with a status of #{locals.status}
+    h2 #{locals.message}
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
