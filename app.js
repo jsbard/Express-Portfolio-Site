@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 
 // Handle all other server errors
-app.use((err, req, res, next) => {
+app.use((err, res) => {
       if (!err.message) {
          err.message = "Something funky happened on our end...";
       }

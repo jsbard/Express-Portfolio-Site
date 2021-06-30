@@ -122,7 +122,13 @@ nav a {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555; 
+  color: #555;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+nav a:hover{
+  color: #999999;
 }
 
 nav a span {
@@ -174,12 +180,22 @@ nav a span {
 }
 
 .sidebar a {
+  display: inline-block;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #555;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+.sidebar a:hover{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: #888888;
+
 }
 
 .header {
@@ -220,7 +236,6 @@ nav a span {
   height: 2px;
   background: #F9F8F0;
 }
-
 
 /*
   Home page styles
