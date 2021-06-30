@@ -265,10 +265,13 @@ nav a span {
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
+.cell{
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
 .cell:hover{
-  -webkit-transition-duration: 300ms;
   -webkit-transform: scale(1.06);
-  transition-duration: 300ms;
   transform: scale(1.06);
 }
 
@@ -299,6 +302,8 @@ nav a span {
 }
 
 .btn-link {
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   display: block;
   text-align: center;
   color: #fefefe;
@@ -311,7 +316,6 @@ nav a span {
 }
 
 .btn-link:hover{
-    transition-duration: 300ms;
     background-color: #003D52;
 }
 
