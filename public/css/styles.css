@@ -160,7 +160,7 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
+  border: 4px solid #F9F8F0;
 }
 
 .dev-intro-box {
@@ -174,9 +174,10 @@ nav a span {
 
 .sidebar p {
   text-rendering: optimizeLegibility;
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
   font-size: 14px;
-  color: #999
+  color: #999;
 }
 
 .sidebar a {
@@ -186,7 +187,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: #ccc;
   -webkit-transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
 }
@@ -194,7 +195,7 @@ nav a span {
 .sidebar a:hover{
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
-  color: #888888;
+  color: #fff;
 
 }
 
