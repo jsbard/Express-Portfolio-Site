@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "id": 7,
+      "project_name": "React Image Gallery",
+      "description": "A multilingual image search engine utilizing React.js and the Flickr API",
+      "technologies": ["React", "React Router v5", "Axios", "Public APIs"],
+      "live_link": "https://andrewhickman.me/imagegallery",
+      "github_link": "https://github.com/jsbard/React-Image-Gallery",
+      "image_urls": ["/static/images/project7/thumbnail.png", "/static/images/project7/thumbnail.png", "/static/images/project7/scrnsht-1.png", "/static/images/project7/scrnsht-2.png"]
+    },
+    {
       "id": 5,
       "project_name": "Public API Employee Directory",
       "description": "Utilize an external API to populate a webpage displaying a list of employees",
