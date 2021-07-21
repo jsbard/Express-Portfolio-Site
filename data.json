@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 7,
-      "project_name": "React Image Gallery",
+      "project_name": "React Image Engine",
       "description": "A multilingual image search engine utilizing React.js and the Flickr API",
       "technologies": ["React", "React Router v5", "Axios", "Public APIs"],
       "live_link": "https://andrewhickman.me/imagegallery",
