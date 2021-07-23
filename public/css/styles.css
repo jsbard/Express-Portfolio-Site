@@ -55,6 +55,8 @@ h6{
 p{
   font-size: 15px;
   color: #333;
+  max-width: 40em;
+  margin: 0;
 }
 
 a {
@@ -244,6 +246,8 @@ nav a span {
 .portfolio-intro {
   max-width: 1200px;
   padding: 40px 50px 30px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .portfolio-intro h1 {
@@ -255,9 +259,11 @@ nav a span {
 .portfolio-intro p {
   text-rendering: optimizeLegibility;
   font-size: 125%;
-  margin: 0 auto;
+  max-width: 40em;
+  text-align: center;
   padding-bottom: 40px;
   border-bottom: 1px solid #eaeaea;
+  margin: 0 auto;
 }
 
 .projects-box h5 {
