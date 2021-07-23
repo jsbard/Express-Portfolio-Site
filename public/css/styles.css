@@ -345,6 +345,13 @@ nav a span {
 /* 
   Tablet layout styles 
 */
+
+@media screen and (max-width: 600px){
+  .portfolio-intro{
+    padding: 2em 5%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .sidebar h5 {
     font-size: 1.25rem;
