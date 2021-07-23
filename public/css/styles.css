@@ -323,6 +323,10 @@ nav a span {
   border: 2px solid #001F29;
 }
 
+.project-info-box{
+  padding-top: 0;
+}
+
 .about-intro-box p,
 .project-info-box p {
   font-size: 125%;
