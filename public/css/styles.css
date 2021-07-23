@@ -316,6 +316,13 @@ nav a span {
 /* 
   About and project pages styles 
 */
+
+.about-img{
+  margin: 50px 1.4em 0;
+  max-width: 40%;
+  border: 2px solid #001F29;
+}
+
 .about-intro-box p,
 .project-info-box p {
   font-size: 125%;
@@ -402,6 +409,11 @@ iframe {
     list-style: none;
   }
 
+  .about-intro-box{
+    text-align: center;
+    left: 20%;
+  }
+
   .btn-link{
     display: block;
   }
@@ -485,6 +497,7 @@ iframe {
 
   .inner-wrapper {
     max-width: 1200px;
+    padding: 0 2%;
   }
 }
 
