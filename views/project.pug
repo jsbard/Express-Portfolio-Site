@@ -16,16 +16,20 @@ block content
         p #{locals.description}
 
       .project-tech-links-box.box
+        a.btn-link(href=`${locals.live_link}` target="_blank") View Project
+        a.btn-link(href=`${locals.github_link}` target="_blank") GitHub Repo
+
         h6 Technologies
         ul
 
           each skill in locals.technologies
             li #{skill}
 
-        a.btn-link(href=`${locals.live_link}` target="_blank") Live Demo
-        a.btn-link(href=`${locals.github_link}` target="_blank") GitHub Repo
-
     .project-img-box.box
+
+      div.project-demo
+        iframe(src=`${locals.live_link}`)
+
 
       img.project-img(src=`${locals.image_urls[1]}`, alt=`${locals.project_name}`)
       img.project-img(src=`${locals.image_urls[2]}`, alt=`${locals.project_name}`)
