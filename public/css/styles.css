@@ -250,6 +250,15 @@ nav a span {
   text-align: center;
 }
 
+.projects-box{
+  margin: 0 auto;
+
+}
+
+.portfolio-project-thumbs{
+  text-align: center;
+}
+
 .portfolio-intro h1 {
   font-size: 1.5rem;
   color: #001F29;
@@ -408,5 +417,11 @@ nav a span {
 
   .inner-wrapper {
     max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  .cell{
+    padding: 2em;
   }
 }
