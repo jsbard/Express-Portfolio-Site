@@ -7,7 +7,12 @@
 const body = document.querySelector('body');
 let headerBtnClicked = false;
 
-document.querySelector('#menu-icon, .wrapper').addEventListener('click', e => {
+document.querySelector('#menu-icon').addEventListener('click', e => {
+  !headerBtnClicked ? body.style.transform = 'translateX(300px)' : body.style.transform = 'translateX(0px)';
+  return headerBtnClicked = !headerBtnClicked;
+});
+
+document.querySelector('.portfolio-intro').addEventListener('click', e => {
   !headerBtnClicked ? body.style.transform = 'translateX(300px)' : body.style.transform = 'translateX(0px)';
   return headerBtnClicked = !headerBtnClicked;
 });
