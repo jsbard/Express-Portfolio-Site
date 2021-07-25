@@ -347,7 +347,6 @@ iframe {
   height: 100%;
   width: 100%;
   border: none;
-  background: #F9F8F0 url("../images/loader.gif") center 1em/10% no-repeat;
 }
 
 .project-demo{
