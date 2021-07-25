@@ -29,7 +29,7 @@ app.post('/contact-email', function (req, res) {
         auth: {
             // should be replaced with real sender's account
             user: "landandleap@gmail.com",
-            pass: "Mermavope21$"
+            pass: "my_pass"
         }
     });
 
