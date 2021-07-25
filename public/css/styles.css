@@ -1,6 +1,8 @@
 /** Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Open+Sans&display=swap');
 
+/** Icon Font Styles Import **/
+@import url("icon-font.css");
 
 /*
   Main styles
@@ -157,6 +159,70 @@ nav a span {
   background: #001F29;
 }
 
+#contact-sidebar{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  width: 0px;
+  height: 100%;
+  min-height: 100%;
+  padding: 0px;
+  background: #001F29;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.close-contact-sidebar{
+  display: none;
+  width: 13%;
+  padding: 0.4em 0;
+  border: 1px solid #fefefe;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 15px -3px #F9F8F0;
+}
+
+.social-icons {
+  text-align: center;
+  color: #fefefe;
+}
+
+.social-icons span{
+  display: inline-block;
+  border: 1px solid #fefefe;
+  border-radius: 50%;
+  padding: 0.4em;
+  margin: 2em 0.4em 1em;
+  font-size: 2em;
+}
+
+.social-info div{
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  max-height: 0;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.social-info div span{
+  display: block;
+  margin: 1em auto 0.2em;
+  color: #fefefe;
+  font-size: 2em;
+}
+
+.social-info div h3{
+  display: block;
+  margin: 0 auto 2em;
+  color: #fefefe;
+}
+
+.social-info div span.icon-twitter{
+  color: #1B95E0;
+}
+
 .sidebar-info-box {
   margin: auto;
 }
@@ -210,7 +276,7 @@ nav a span {
 .header {
   vertical-align: middle;
   color: #fefefe;
-  height: 40px;
+  height: 4em;
   padding: 0.5rem;
   background: #001F29;
   border-left: 1px solid #001F29;
@@ -219,19 +285,20 @@ nav a span {
 .header span {
   display: inline-block;
   font-weight: bold;
+  margin-top: 0.5em;
 }
 
 .header button {
-  vertical-align: top;
   cursor: pointer;
   outline: none;
+  vertical-align: top;
   position: relative;
   width: 20px;
-  height: 16px;
+  height: 1em;
   border: none;
   background: #001F29;
-  margin-top: 3px;
-  margin-right: 10px;
+  margin-top: 0.9em;
+  margin-right: 20px;
   border-top: 2px solid #fefefe;
   border-bottom: 2px solid #fefefe;
 }
@@ -343,11 +410,18 @@ nav a span {
 
 }
 
+.project-demo{
+  overflow: hidden;
+  width: 100%;
+}
+
 iframe {
   height: 100%;
-  width: 100%;
+  width: 102%;
   border: none;
-  background: #F9F8F0 url("../images/loader.gif") center 1em/10% no-repeat;
+  background: #F9F8F0 url("../images/loader.gif") center 1em/10% no-repeat;-
+  webkit-box-shadow: inset 0px 0px 10px 1px #001F29;
+  box-shadow: inset -10px 0px 10px 1px #001F29;
 }
 
 .project-demo{

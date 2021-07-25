@@ -5,7 +5,43 @@ block content
   nav.nav
     a(href='/')
       span &larr;
-      |  Back
+      |  Back To Projects
+
+  #contact-sidebar
+    span.icon-chevron-thin-right.close-contact-sidebar
+    .contact.social-icons
+        span.icon-github
+        span.icon-linkedin
+        span.icon-twitter
+    .social-info
+      .github
+        span.icon-github
+        h3 GitHub
+        a.github-button(href='https://github.com/jsbard' data-color-scheme='no-preference: light; light: light; dark: dark;' data-size='large' aria-label='Follow @jsbard on GitHub') Follow @jsbard
+      .linkedin
+          span.icon-linkedin
+          h3 LinkedIn
+          a(href="https://linkedin.com/in/andrewbhickman" target="_blank")
+            button.linkedin-button Connect on LinkedIn
+      .twitter
+        span.icon-twitter
+        h3 Twitter
+        a.twitter-follow-button(href='https://twitter.com/imreallyandrew?ref_src=twsrc%5Etfw' data-show-count='false' data-size="large") Follow @imreallyandrew
+
+    form#contact-form-email
+      label(for="name") Your Name:
+      input(type="text" id="name" name="name")
+      label(for="email") Email Address:
+      input(type="email" id="email" name="email")
+      label(for="email-body") How Can I Help You Today?
+      textarea(maxlength="500" id="email-body" name="email-body")
+      button.submit(type="submit" action="/contact" method="POST") Submit
+
+    form#contact-form-text
+      label(for="phone") Phone Number:
+      input(type="tel" id="phone" name="phone")
+      label(for="sms-body") How Can I Help You Today?
+      textarea(maxlength="500" id="sms-body" name="sms-body")
 
   article.portfolio-about
     .inner-wrapper.flex-row-wrap.two-col
@@ -22,9 +58,7 @@ block content
           p Seeking to put my passion for full-stack JavaScript development and technology in the service of creating engaging online experiences. I look forward to applying my previous work and volunteer experience in digital marketing and retail to a new career in tech.
 
       .skills-contact-box.box
-        a.btn-link(href='https://www.linkedin.com/in/andrewbhickman/' target="_blank") LinkedIn
-        a.btn-link(href='https://github.com/jsbard' target="_blank") GitHub
-        a.btn-link(href='https://twitter.com/imreallyandrew' target="_blank") Twitter
+        button.contact-toggle Toggle
         h6 Skills
 
         ul
@@ -42,7 +76,7 @@ block content
           li HTML
           li CSS
 
-        h6 Contact Info
+        h6 Contact
 
         ul
           li hello@andrewhickman.me
@@ -50,4 +84,4 @@ block content
     nav.nav
       a(href='/')
         span &larr;
-        |  Back
+        |  Back To Projects

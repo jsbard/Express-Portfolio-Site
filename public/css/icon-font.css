@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icons/icomoon.eot?i8hal6');
+    src:  url('../fonts/icons/icomoon.eot?i8hal6#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?i8hal6') format('truetype'),
+    url('../fonts/icons/icomoon.woff?i8hal6') format('woff'),
+    url('../fonts/icons/icomoon.svg?i8hal6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-thin-down:before {
+    content: "\e900";
+}
+.icon-chevron-thin-left:before {
+    content: "\e901";
+    color: #fefefe;
+}
+.icon-chevron-thin-right:before {
+    content: "\e902";
+    color: #fefefe;
+}
+.icon-chevron-thin-up:before {
+    content: "\e903";
+}
+.icon-code:before {
+    content: "\e904";
+}
+.icon-help-with-circle:before {
+    content: "\e905";
+}
+.icon-link:before {
+    content: "\e906";
+}
+.icon-mail:before {
+    content: "\e907";
+}
+.icon-menu:before {
+    content: "\e908";
+}
+.icon-paper-plane:before {
+    content: "\e909";
+}
+.icon-tools:before {
+    content: "\e90a";
+}
+.icon-skype:before {
+    content: "\e90b";
+}
+.icon-facebook:before {
+    content: "\e90c";
+}
+.icon-github:before {
+    content: "\e90d";
+}
+.icon-linkedin:before {
+    content: "\e90e";
+}
+.icon-twitter:before {
+    content: "\e90f";
+}
