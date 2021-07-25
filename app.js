@@ -3,7 +3,6 @@ const data = require("./data.json");
 const app = express();
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
-const emailAuth = require("./config");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
