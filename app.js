@@ -22,23 +22,33 @@ app.get("/about", (req, res) => {
 });
 
 app.post('/contact-email', function (req, res) {
+
+    const userName = req.body.name;
+    const userEmail = req.body.email;
+    const userMessage = req.body.msg;
+
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
             // should be replaced with real sender's account
-            user: "landandleap@gmail.com",
-            pass: "my_pass"
+            user: "personalportfolio2021@gmail.com",
+            pass: "n0tMya2ualEMail"
         }
     });
 
     let mailOptions = {
-            from: 'landandleap@gmail.com',  // sender address
+            from: 'personalportfolio2021@gmail.com',  // sender address
             to: 'landandleap@gmail.com',   // list of receivers
-            subject: 'Sending Email using Node.js',
-            text: 'That was easy!',
-            html: '<b>Hey there from Nodemailer! </b>'
+            subject: `${userName} sent you a message from andrewhickman.me`,
+            html: `Name: ${userName}\
+                   \
+                   Email: ${userEmail} \
+                   \
+                   Message: \
+                   \
+                   ${userMessage}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

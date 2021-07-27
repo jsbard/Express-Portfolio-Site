@@ -10,6 +10,7 @@ const contactSidebarCloseBtn = document.querySelector(".close-contact-sidebar");
 const contactSidebar = document.getElementById('contact-sidebar');
 const socialButtons = document.querySelector(".contact.social-icons");
 const socialSections = document.querySelectorAll(".social-info div");
+const emailSentMessage = document.querySelector(".email-form-submitted");
 let headerBtnClicked = false;
 let contactToggleClicked = false;
 
@@ -27,16 +28,27 @@ if (iframe) {
 if (contactSidebar) {
   document.querySelector('.contact-toggle').addEventListener('click', e => {
     if (!contactToggleClicked){
+      document.querySelector("#name").focus();
+      contactSidebar.style.display = "block";
       contactSidebar.style.width = "300px";
       contactSidebar.style.padding = "20px";
       contactSidebarCloseBtn.style.display = "block";
     } else {
       contactSidebar.style.width = "0px";
       contactSidebar.style.padding = "0px";
+      contactSidebar.style.display = "none";
       contactSidebarCloseBtn.style.display = "none";
     }
     return contactToggleClicked = !contactToggleClicked;
   });
+
+  contactSidebarCloseBtn.addEventListener("click", () => {
+    contactSidebar.style.width = "0px";
+    contactSidebar.style.padding = "0px";
+    contactSidebarCloseBtn.style.display = "none";
+    contactSidebar.style.display = "none";
+    return contactToggleClicked = !contactToggleClicked;
+  })
 
   // Handle toggle events for social contact buttons
     const githubButton = document.querySelector(".contact.social-icons .icon-github");
@@ -45,45 +57,75 @@ if (contactSidebar) {
     const github = document.querySelector(".social-info .github");
     const linkedin = document.querySelector(".social-info .linkedin");
     const twitter = document.querySelector(".social-info .twitter");
+    const displayFormButton = document.querySelector(".contact-form-btn");
+    const emailForm = document.querySelector("#contact-form-email");
 
     socialButtons.addEventListener("click", (e) => {
+
+      emailSentMessage.style.display = "none";
+
       socialSections.forEach(section => {
         section.style.display = "none";
         section.style.maxHeight = "0";
+        displayFormButton.style.display = "none";
+        emailForm.style.display = "block";
       });
 
       if (e.target === githubButton){
         github.style.display = "block";
-        github.style.maxHeight = "auto";
+        displayFormButton.style.display = "block";
+        emailForm.style.display = "none";
       }
 
       if (e.target === linkedinButton){
         linkedin.style.display = "block";
-        linkedin.style.maxHeight = "auto";
+        displayFormButton.style.display = "block";
+        emailForm.style.display = "none";
       }
 
       if (e.target === twitterButton){
         twitter.style.display = "block";
-        twitter.style.maxHeight = "auto";
+        displayFormButton.style.display = "block";
+        emailForm.style.display = "none";
       }
+  });
+
+
+  displayFormButton.addEventListener("click", () => {
+    socialSections.forEach(section => {
+      section.style.display = "none";
+    });
+    emailForm.style.display = "block";
+    displayFormButton.style.display = "none";
   });
 
     //Contact form client configurations
   const contactFormEmail = document.querySelector("#contact-form-email");
   contactFormEmail.addEventListener("submit", (e) => {
+    const userName = document.getElementById("name");
+    const userEmail = document.getElementById("email");
+    const emailBody = document.getElementById("email-body");
+
+    let formData = {
+      name: userName.value,
+      email: userEmail.value,
+      msg: emailBody.value
+    };
+
     e.preventDefault();
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "/contact-email", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4){
-        console.log("Nice!");
+        emailForm.style.display = "none";
+        userName.value = "";
+        userEmail.value = "";
+        emailBody.value = "";
+        emailSentMessage.style.display = "block";
       }
     }
-    xhr.send();
-    // xhr.send(JSON.stringify({
-    //   value: value
-    // }));
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.send(JSON.stringify(formData));
   });
 }
 
