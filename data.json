@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+    "id": 8,
+    "project_name": "Library Management Application",
+    "description": "A library catalogue management app leveraging Express.js and the Sequelize ORM",
+    "technologies": ["Express", "SQL", "Sequelize ORM"],
+    "live_link": "https://andrewhickman.me/libraryapp",
+    "github_link": "https://github.com/jsbard/Library-Catalogue",
+    "image_urls": ["/static/images/project8/thumbnail.png", "/static/images/project8/thumbnail.png", "/static/images/project8/scrnsht-01.png", "/static/images/project8/scrnsht-02.png"]
+    },
+    {
       "id": 7,
       "project_name": "React Image Engine",
       "description": "A multilingual image search engine utilizing React.js and the Flickr API",
@@ -20,7 +29,7 @@
     },
     {
       "id": 4,
-      "project_name": "Game Show App",
+      "project_name": "Phrase Hunter Game",
       "description": "A Wheel-Of-Fortune style browser-based game. Guess the phrase before you run out of lives!",
       "technologies": ["JavaScript", "Object-Oriented Programming"],
       "live_link": "https://jsbard.github.io/Game-Show-App/",
